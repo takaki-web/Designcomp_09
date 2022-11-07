@@ -1,0 +1,21 @@
+// foundation
+@use "./foundation/base";
+@use "./foundation/color";
+// mixin
+@use "./mixin";
+// レイアウト
+@use "./layouts/header";
+@use "./layouts/footer";
+// コンポーネント(再利用可能なCSS)
+@use "./objects/components/inner";
+@use "./objects/components/title";
+// プロジェクト(ページごとの固有CSS)
+@use "./objects/projects/fv";
+@use "./objects/projects/initiative";
+@use "./objects/projects/notice";
+@use "./objects/projects/diagnosis";
+@use "./objects/projects/greeting";
+@use "./objects/projects/introduction";
+@use "./objects/projects/access";
+// Utilities
+// @use "./objects/utilities";

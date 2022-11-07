@@ -1,0 +1,36 @@
+@use "../foundation/import";
+@use "../mixin" as m;
+
+// footerセクション
+.l-footer {
+  background-color: import.$color-lightgray1;
+  .l-footer__grid-wrapper {
+    display: grid;
+    grid-template-columns: 140px 84px;
+    grid-template-rows: 154px;
+    grid-column-gap: 61px;
+    grid-row-gap: 0;
+    justify-content: center;
+  }
+  .l-footer__grid-item{
+    font-size: 1.4rem;
+    margin-top: 91px;
+    line-height: 2;
+  }
+  .l-footer__grid-item:nth-of-type(2)::before{
+    content:"";
+    height: 24px;
+    border-left: 1px solid import.$color-black;
+    position: absolute;
+    transform: translateX(-30px);
+  }
+
+  .l-footer__copyright{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+  }
+}
+@include m.mq(pc) {
+}
