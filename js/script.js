@@ -10,23 +10,23 @@ $('a[href^="#"]').click(function () {
 
 // ハンバーガーメニュー
 $(function () {
-  $('.js-l-header__burger-btn').click(function () {
+  $('.js-p-index-fv__burger-btn').click(function () {
     $(this).toggleClass('active')
 
     if ($(this).hasClass('active')) {
-      $('.js-l-header__burger-menu').addClass('active')
+      $('.js-p-index-fv__burger-menu').addClass('active')
     } else {
-      $('.js-l-header__burger-menu').removeClass('active')
+      $('.js-p-index-fv__burger-menu').removeClass('active')
     }
   })
 })
 // ページ内リンクに飛ぶ時にリンククリックしたらハンバーガーメニューが閉じるように
 $('#menu a[href]').on('click', function (event) {
-  $('.js-l-header__burger-btn').trigger('click')
+  $('.js-p-index-fv__burger-btn').trigger('click')
 })
 // ×ボタン押したらハンバーガーメニューが閉じるように
 $('.js-burger-menu').on('click', function (event) {
-  $('.js-l-header__burger-btn').trigger('click')
+  $('.js-p-index-fv__burger-btn').trigger('click')
 })
 
 $(function () {

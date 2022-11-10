@@ -1,6 +1,6 @@
 $breakpoint: (
-  sp: "screen and (max-width: 699px)",
-  pc: "screen and (min-width: 700px)",
+  sp: "screen and (max-width: 849px)",
+  pc: "screen and (min-width: 850px)",
 );
 
 @mixin mq($bp) {

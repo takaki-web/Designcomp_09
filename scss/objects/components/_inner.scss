@@ -4,13 +4,13 @@
 // Base (Mobile First)
 
 .c-inner {
-  width: 89.333vw;
-  max-width: 1000px;
+  width: 91.467vw;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0;
 }
 @include m.mq(pc) {
   .c-inner {
-    width: 71.429vw;
+    width: 83.333vw;
   }
 }

@@ -9,6 +9,7 @@
 // コンポーネント(再利用可能なCSS)
 @use "./objects/components/inner";
 @use "./objects/components/title";
+@use "./objects/components/button";
 // プロジェクト(ページごとの固有CSS)
 @use "./objects/projects/fv";
 @use "./objects/projects/initiative";

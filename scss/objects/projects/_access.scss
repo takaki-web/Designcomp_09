@@ -3,5 +3,133 @@
 // Base (Mobile First)
 
 // accessセクション
+.p-index-access {
+  .p-index-access__grid-wrapper {
+    margin-top: 48px;
+    padding-bottom: 40px;
+  }
+  .p-index-access__grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .p-index-access__grid-item:nth-of-type(1) {
+    padding-bottom: 40px;
+  }
+  .p-index-access__logo-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 54px;
+    padding-top: 13px;
+    align-items: center;
+    justify-content: flex-start;
+    transform: translateX(-80px);
+  }
+  .p-index-access__logo {
+    color: import.$color-river-blue;
+    text-align: center;
+    margin-left: 8px;
+    span {
+      display: block;
+      font-size: 1.2rem;
+    }
+  }
+  .p-index-access__address {
+    margin-top: 16px;
+		width: 219px;
+		line-height: 1.25;
+		white-space:nowrap;
+    transform: translateX(-55px);
+		span{
+			display: block;
+		}
+  }
+  .p-index-access__calendar-wrapper {
+    margin-top: 24px;
+    padding-bottom: 40px;
+  }
+  .p-index-access__calendar {
+    display: grid;
+    grid-template-columns: 118px repeat(7, 30px);
+    grid-template-rows: repeat(3, 32px);
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+  }
+  .p-index-access__calendar li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .p-index-access__calendar-title,
+  .p-index-access__calendar-weekday,
+  .p-index-access__calendar-time {
+    color: import.$color-white;
+    background-color: import.$color-river-blue;
+  }
+  .p-index-access__calendar-symbol {
+    color: import.$color-river-blue;
+    font-size: 2rem;
+    background-color: import.$color-white;
+  }
+  .p-index-access__button-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .p-index-access__grid-item:nth-of-type(2) {
+    margin-right: calc(50% - 50vw);
+    margin-left: calc(50% - 50vw);
+  }
+}
 @include m.mq(pc) {
+  .p-index-access {
+		.p-index-access__title-wrapper{
+			display: flex;
+			justify-content: start;
+		}
+    .p-index-access__grid-wrapper {
+      margin-top: 80px;
+      padding-bottom: 120px;
+      display: grid;
+      grid-template-columns: 373px 1fr;
+      grid-template-rows: 400px;
+      grid-column-gap: 19.25%;
+      grid-row-gap: 0px;
+			max-width: 1200px;
+    }
+		.p-index-access__grid-item {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-start;
+      iframe{
+        width: 100%;
+        max-width: 600px;
+      }
+		}
+		.p-index-access__logo-wrapper {
+			transform: translateX(0);
+		}
+		.p-index-access__address {
+			margin-top: 16px;
+			width: auto;
+			line-height: 1.25;
+			white-space:nowrap;
+			transform: translateX(0);
+			span{
+				display: inline-block;
+			}
+		}
+		.p-index-access__calendar-wrapper {
+			margin-top: 40px;
+			padding-bottom: 116px;
+		}
+		.p-index-access__calendar {
+			grid-template-columns: 120px repeat(7, 32px);
+			grid-template-rows: repeat(3, 32px);
+		}
+		.p-index-access__grid-item:nth-of-type(2) {
+			margin: 0;
+		}
+  }
 }

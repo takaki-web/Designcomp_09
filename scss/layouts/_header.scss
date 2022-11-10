@@ -4,129 +4,71 @@
 
 // headerセクション
 .l-header {
-  border-bottom: 1px solid import.$color-red;
   .l-header__grid-wrapper {
-    height: 53px;
-  }
-  .l-header__title {
-    margin-top: 27px;
-    text-align: center;
-  }
-  .l-header__burger-btn {
-    position: absolute;
-    z-index: 3;
-    top: 0;
-    left: 0;
-    width: 80px;
     height: 80px;
-    cursor: pointer;
+    border: 1px solid import.$color-river-blue;
+    border-radius: 10px;
+    margin-top: 16px;
+		display: grid;
+		grid-template-columns: 1fr 100px;
+		grid-template-rows: 54px;
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
   }
-  .l-header__burger-btn span {
-    display: block;
-    position: absolute;
-    width: 36px;
-    height: 2px;
-    left: 1.333vw;
-    -webkit-transition: 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-    transform: translate(15px, 15px);
-    background-color: import.$color-red;
+  .l-header__logo-wrapper {
+    display: flex;
+    flex-direction: row;
+		height: 54px;
+		padding-top: 13px;
+		align-items: center;
+		justify-content: center;
   }
-  .l-header__burger-btn span:nth-child(1) {
-    top: 11px;
-  }
-  .l-header__burger-btn span:nth-child(2) {
-    top: 23px;
-  }
-  .l-header__burger-btn span:nth-child(3) {
-    top: 35px;
-  }
-  /* ナビ開いてる時のバツボタン */
-  .l-header__burger-btn.active span:nth-child(1) {
-    top: 36px;
-    left: 21px;
-    background: import.$color-white;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
-
-  .l-header__burger-btn.active span:nth-child(2),
-  .l-header__burger-btn.active span:nth-child(3) {
-    top: 36px;
-    left: 21px;
-    background: import.$color-white;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-  /* ナビメニュー内 */
-  .l-header__burger-menu {
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    color: import.$color-white;
+  .l-header__logo {
+    color: import.$color-river-blue;
     text-align: center;
-    width: 100%;
-    height: 100%;
-    font-weight: 500;
-    opacity: 0;
-    transition: opacity 0.6s ease, visibility 0.6s ease;
-    visibility: hidden;
-    -webkit-overflow-scrolling: touch;
-    overflow-y: scroll;
-    background: import.$color-black;
-    overscroll-behavior-y: none;
+		margin-left: 8px;
+    span {
+      display: block;
+      font-size: 1.2rem;
+    }
   }
 
-  .l-header__burger-menu ul {
-    text-align: center;
-    margin-top: 70px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows:repeat(5, 21px);
-    grid-column-gap: 0px;
-    grid-row-gap: 20px;
-  }
-
-  .l-header__burger-menu__link {
-    transition: 0.4s all;
-  }
-
-
-  /* ハンバーガーメニュー押してactiveクラスを付いたら表示する */
-  nav.l-header__burger-menu.active {
-    opacity: 0.9;
-    visibility: visible;
-  }
+	.l-header__button{
+		width: 100px;
+		height: 80px;
+		background-color: import.$color-river-blue;
+		font-size: 1.2rem;
+		color: import.$color-white;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 5px;
+		border-radius: 0 10px 10px 0;
+	}
 }
 @include m.mq(pc) {
-  .l-header {
-    .l-header__grid-wrapper {
-      height: 81px;
-      display: grid;
-      grid-template-columns: 25% 75%;
-      grid-template-rows: 56.29px;
-      grid-column-gap: 27.222%;
-      grid-row-gap: 0px;
-    }
-    .l-header__title {
-      margin-top: 24.71px;
-      width: 236.37px;
-    }
-  }
-  .l-header__grid-item {
-    margin-top: 30px;
-  }
-  .l-header__lists {
-    display: grid;
-    grid-template-columns: repeat(3, 56px) 84px;
-    grid-template-rows: 21px;
-    grid-column-gap: 2.857vw;
-    grid-row-gap: 0px;
-    font-size: 1.4rem;
-    line-height: 1.5;
-  }
+	.l-header {
+		.l-header__grid-wrapper {
+			grid-template-columns: 204px 1fr 100px;
+			margin-top: 40px;
+		}
+		.l-header__logo-wrapper {
+			justify-content: flex-start;
+			margin-left: 40px;
+		}
+
+		.l-header__lists {
+			display: grid;
+			grid-template-columns: repeat(5, 1fr);
+			grid-template-rows: 24px;
+			grid-column-gap: 4.444%;
+			grid-row-gap: 0px;
+			margin-top: 28px;
+			padding-right: 4.444%;
+			max-width: 584px;
+			margin-left: auto;
+			font-size: clamp(1.2rem, 1.4vw, 1.6rem); //両方を設定したい場合
+		}
+	}
 }
