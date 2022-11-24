@@ -10,66 +10,19 @@ $('a[href^="#"]').click(function () {
 
 // ハンバーガーメニュー
 $(function () {
-  $('.js-p-index-fv__burger-btn').click(function () {
-    $(this).toggleClass('active')
+  $(".js-p-index-fv__burger-btn").click(function () {
+    $(this).toggleClass("active");
 
-    if ($(this).hasClass('active')) {
-      $('.js-p-index-fv__burger-menu').addClass('active')
+    if ($(this).hasClass("active")) {
+      $(".js-p-index-fv__burger-menu").addClass("active");
+      $("body").addClass("fixed");
     } else {
-      $('.js-p-index-fv__burger-menu').removeClass('active')
+      $(".js-p-index-fv__burger-menu").removeClass("active");
+      $("body").removeClass("fixed");
     }
-  })
-})
+  });
+});
 // ページ内リンクに飛ぶ時にリンククリックしたらハンバーガーメニューが閉じるように
-$('#menu a[href]').on('click', function (event) {
-  $('.js-p-index-fv__burger-btn').trigger('click')
-})
-// ×ボタン押したらハンバーガーメニューが閉じるように
-$('.js-burger-menu').on('click', function (event) {
-  $('.js-p-index-fv__burger-btn').trigger('click')
-})
-
-$(function () {
-  $("#js-p-works-primary__public-slider").slick({
-    arrows: false,
-    autoplay: false,
-    adaptiveHeight: false,
-    speed: 1000,
-    slidesToShow: 1,
-    centerMode: true,
-    centerPadding: "190px",
-    dots: true,
-    dotsClass: "p-works-primary__slider-dots",
-    responsive: [
-      {
-        breakpoint: 900,
-        settings: {
-          centerPadding: "50px",
-        }
-      },
-    ],
-  });
+$(".p-index-fv__burger-menu-link,a").on("click", function (event) {
+  $(".js-p-index-fv__burger-btn").trigger("click");
 });
-
-$(function () {
-  $("#js-p-works-primary__apartment-slider").slick({
-    arrows: false,
-    autoplay: false,
-    adaptiveHeight: false,
-    speed: 1000,
-    slidesToShow: 1,
-    centerMode: true,
-    centerPadding: "190px",
-    dots: true,
-    dotsClass: "p-works-primary__slider-dots",
-    responsive: [
-      {
-        breakpoint: 900,
-        settings: {
-          centerPadding: "50px",
-        }
-      },
-    ],
-  });
-});
-
