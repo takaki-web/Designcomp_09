@@ -27,6 +27,11 @@ body {
   letter-spacing: 0.2em;
 }
 
+body.fixed {
+  height: 100%;
+  overflow: hidden;
+}
+
 table {
   border-collapse: separate;
   border-spacing: 1px;
@@ -513,9 +518,29 @@ table {
   max-width: 320px;
   aspect-ratio: 40/41;
   background-color: #fff;
+  position: relative;
+}
+.p-index-notice .p-index-notice__img-wrapper {
+  overflow: hidden; /* これが無いと枠ごと大きくなる */
+  display: block;
+}
+.p-index-notice .p-index-notice__img-wrapper:hover img {
+  transform: scale(1.2); /* 拡大 */
+}
+.p-index-notice .p-index-notice__img-wrapper:hover .p-index-notice__mask {
+  z-index: 1;
 }
 .p-index-notice .p-index-notice__img-wrapper img {
   width: 100%;
+  transition: transform 0.3s ease; /* ゆっくり変化させる */
+}
+.p-index-notice .p-index-notice__mask {
+  position: absolute;
+  background-color: rgba(99, 166, 219, 0.2);
+  width: 320px;
+  height: 184px;
+  top: 0;
+  z-index: -1;
 }
 .p-index-notice .p-index-notice__content-wrapper {
   margin-left: 16px;
