@@ -23,6 +23,6 @@ $(function () {
   });
 });
 // ページ内リンクに飛ぶ時にリンククリックしたらハンバーガーメニューが閉じるように
-$(".p-index-fv__burger-menu-link,a").on("click", function (event) {
+$(".p-index-fv__burger-menu-link,.p-index-fv__burger-menu-link a").on("click", function (event) {
   $(".js-p-index-fv__burger-btn").trigger("click");
 });
