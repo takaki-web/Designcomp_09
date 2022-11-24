@@ -1,119 +1,119 @@
 @use "../../foundation/import";
 @use "../../mixin" as m;
 // Base (Mobile First)
-		.p-index-diagnosis{
-			padding-top: 40px;
-			padding-bottom: 40px;
-			background: linear-gradient(180deg, #FFFFFF 0%, #DAEFFF 100%);
-			.p-index-diagnosis__content-wrapper{
-				width: 333.47px;
-				height: 333.47px;
-				background-color: import.$color-white;
-				border-radius: 50%;
-				position: relative;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				margin: 0 auto;
-				margin-top: 45px;
-			}
-			.p-index-diagnosis__svg-wrapper{
-				position: absolute;
-				width: 104.87px;
-				height: 104.87px;
-				background: linear-gradient(90deg, #63A6DB 0%, #D4ECEA 100%);
-				border-radius: 50%;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				margin: 0 auto;
-				&::after{
-					content:"";
-					position: absolute;
-					font-size: 1.14333rem;
-					letter-spacing: 0.2em;
-					bottom: 0;
-					transform: translateY(20px);
-				}
-			}
-			.p-index-diagnosis__svg-wrapper:nth-of-type(1){
-				transform: translateY(-120px);
-				&::after{
-					content:"一般歯科";
-				}
-			}
-			.p-index-diagnosis__svg-wrapper:nth-of-type(2){
-				transform: translate(120px,-40px);
-				&::after{
-					content:"小児歯科";
-				}
-			}
-			.p-index-diagnosis__svg-wrapper:nth-of-type(3){
-				transform: translate(70px,100px);
-				&::after{
-					content:"インプラント";
-				}
-			}
-			.p-index-diagnosis__svg-wrapper:nth-of-type(4){
-				transform: translate(-70px,100px);
-				&::after{
-					content:"予防歯科";
-				}
-			}
-			.p-index-diagnosis__svg-wrapper:nth-of-type(5){
-				transform: translate(-120px,-40px);
-				&::after{
-					content:"ホワイトニング";
-				}
-			}
-			.p-index-diagnosis__button-wrapper{
-				margin-top: 44.26px;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-			}
-		}
+.p-index-diagnosis {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: linear-gradient(180deg, #ffffff 0%, #daefff 100%);
+  .p-index-diagnosis__content-wrapper {
+    width: 333.47px;
+    height: 333.47px;
+    background-color: import.$color-white;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 45px;
+  }
+  .p-index-diagnosis__svg-wrapper {
+    position: absolute;
+    width: 104.87px;
+    height: 104.87px;
+    background: linear-gradient(90deg, #63a6db 0%, #d4ecea 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    &::after {
+      content: "";
+      position: absolute;
+      font-size: 1.14333rem;
+      letter-spacing: 0.2em;
+      bottom: 0;
+      transform: translateY(20px);
+    }
+  }
+  .p-index-diagnosis__svg-wrapper:nth-of-type(1) {
+    transform: translateY(-120px);
+    &::after {
+      content: "一般歯科";
+    }
+  }
+  .p-index-diagnosis__svg-wrapper:nth-of-type(2) {
+    transform: translate(120px, -40px);
+    &::after {
+      content: "小児歯科";
+    }
+  }
+  .p-index-diagnosis__svg-wrapper:nth-of-type(3) {
+    transform: translate(70px, 100px);
+    &::after {
+      content: "インプラント";
+    }
+  }
+  .p-index-diagnosis__svg-wrapper:nth-of-type(4) {
+    transform: translate(-70px, 100px);
+    &::after {
+      content: "予防歯科";
+    }
+  }
+  .p-index-diagnosis__svg-wrapper:nth-of-type(5) {
+    transform: translate(-120px, -40px);
+    &::after {
+      content: "ホワイトニング";
+    }
+  }
+  .p-index-diagnosis__button-wrapper {
+    margin-top: 44.26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 // diagnosisセクション
 @include m.mq(pc) {
-	.p-index-diagnosis{
-		padding-top: 120px;
-		padding-bottom: 80px;
-		.p-index-diagnosis__title-wrapper{
-			display: flex;
-			align-items: center;
-			justify-content: flex-start;
-		}
-		.p-index-diagnosis__content-wrapper{
-			width: 640px;
-			height: 640px;
-			margin-top: 28px;
-		}
-		.p-index-diagnosis__svg-wrapper{
-			width: 240px;
-			height: 240px;
-			&::after{
-				font-size: 2.4rem;
-				transform: translateY(40px);
-			}
-		}
-		.p-index-diagnosis__svg-wrapper:nth-of-type(1){
-			transform: translateY(-280px);
-		}
-		.p-index-diagnosis__svg-wrapper:nth-of-type(2){
-			transform: translate(280px,-100px);
-		}
-		.p-index-diagnosis__svg-wrapper:nth-of-type(3){
-			transform: translate(160px,260px);
-		}
-		.p-index-diagnosis__svg-wrapper:nth-of-type(4){
-			transform: translate(-160px,260px);
-		}
-		.p-index-diagnosis__svg-wrapper:nth-of-type(5){
-			transform: translate(-280px,-100px);
-		}
-		.p-index-diagnosis__button-wrapper{
-			margin-top: 149px;
-			justify-content: flex-end;
-		}
-	}
+  .p-index-diagnosis {
+    padding-top: 120px;
+    padding-bottom: 80px;
+    .p-index-diagnosis__title-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .p-index-diagnosis__content-wrapper {
+      width: 640px;
+      height: 640px;
+      margin-top: 28px;
+    }
+    .p-index-diagnosis__svg-wrapper {
+      width: 240px;
+      height: 240px;
+      &::after {
+        font-size: 2.4rem;
+        transform: translateY(40px);
+      }
+    }
+    .p-index-diagnosis__svg-wrapper:nth-of-type(1) {
+      transform: translateY(-280px);
+    }
+    .p-index-diagnosis__svg-wrapper:nth-of-type(2) {
+      transform: translate(280px, -100px);
+    }
+    .p-index-diagnosis__svg-wrapper:nth-of-type(3) {
+      transform: translate(160px, 260px);
+    }
+    .p-index-diagnosis__svg-wrapper:nth-of-type(4) {
+      transform: translate(-160px, 260px);
+    }
+    .p-index-diagnosis__svg-wrapper:nth-of-type(5) {
+      transform: translate(-280px, -100px);
+    }
+    .p-index-diagnosis__button-wrapper {
+      margin-top: 149px;
+      justify-content: flex-end;
+    }
+  }
 }

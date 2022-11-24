@@ -5,32 +5,32 @@
 .l-footer {
   height: 80px;
   background-color: import.$color-river-blue;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	color: import.$color-white;
-	position: relative;
-	&::after{
-		content:"";
-		position: absolute;
-		width: 1959px;
-		height: 32vw;
-		background: linear-gradient(90deg, #63A6DB 0%, #D4ECEA 100%);
-		transform: rotate(90deg) translate(-1020px,-34.133vw);
-		z-index: -1;
-	}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: import.$color-white;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 1959px;
+    height: 32vw;
+    background: linear-gradient(90deg, #63a6db 0%, #d4ecea 100%);
+    transform: rotate(90deg) translate(-1020px, -34.133vw);
+    z-index: -1;
+  }
 }
 @include m.mq(pc) {
-	.l-footer{
-	&::after{
-		content:"";
-		position: absolute;
-		width: 888px;
-		height: 25vw;
-		background: linear-gradient(90deg, #63A6DB 0%, #D4ECEA 100%);
-		transform: rotate(90deg) translate(-484px,-38vw);
-		z-index: -1;
-	}
-}
+  .l-footer {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 888px;
+      height: 25vw;
+      background: linear-gradient(90deg, #63a6db 0%, #d4ecea 100%);
+      transform: rotate(90deg) translate(-484px, -38vw);
+      z-index: -1;
+    }
+  }
 }

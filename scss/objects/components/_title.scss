@@ -2,19 +2,19 @@
 @use "../../mixin" as m;
 
 // Base (Mobile First)
-		.c-title{
-			text-align: center;
-			font-size: 4rem;
-			line-height: 48px;
-			font-weight: 700;
-			&::before{
-				content:url(/img/component/cream.svg);
-				padding-right: 19.67px;
-			}
-			&::after{
-				content:url(/img/component/burash.svg);
-				margin-left: 19.67px;
-			}
-		}
+.c-title {
+  text-align: center;
+  font-size: 4rem;
+  line-height: 48px;
+  font-weight: 700;
+  &::before {
+    content: url(/img/component/cream.svg);
+    padding-right: 19.67px;
+  }
+  &::after {
+    content: url(/img/component/burash.svg);
+    margin-left: 19.67px;
+  }
+}
 @include m.mq(pc) {
 }

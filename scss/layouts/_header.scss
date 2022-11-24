@@ -9,66 +9,66 @@
     border: 1px solid import.$color-river-blue;
     border-radius: 10px;
     margin-top: 16px;
-		display: grid;
-		grid-template-columns: 1fr 100px;
-		grid-template-rows: 54px;
-		grid-column-gap: 0px;
-		grid-row-gap: 0px;
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    grid-template-rows: 54px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
   }
   .l-header__logo-wrapper {
     display: flex;
     flex-direction: row;
-		height: 54px;
-		padding-top: 13px;
-		align-items: center;
-		justify-content: center;
+    height: 54px;
+    padding-top: 13px;
+    align-items: center;
+    justify-content: center;
   }
   .l-header__logo {
     color: import.$color-river-blue;
     text-align: center;
-		margin-left: 8px;
+    margin-left: 8px;
     span {
       display: block;
       font-size: 1.2rem;
     }
   }
 
-	.l-header__button{
-		width: 100px;
-		height: 80px;
-		background-color: import.$color-river-blue;
-		font-size: 1.2rem;
-		color: import.$color-white;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		gap: 5px;
-		border-radius: 0 10px 10px 0;
-	}
+  .l-header__button {
+    width: 100px;
+    height: 80px;
+    background-color: import.$color-river-blue;
+    font-size: 1.2rem;
+    color: import.$color-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 0 10px 10px 0;
+  }
 }
 @include m.mq(pc) {
-	.l-header {
-		.l-header__grid-wrapper {
-			grid-template-columns: 204px 1fr 100px;
-			margin-top: 40px;
-		}
-		.l-header__logo-wrapper {
-			justify-content: flex-start;
-			margin-left: 40px;
-		}
+  .l-header {
+    .l-header__grid-wrapper {
+      grid-template-columns: 204px 1fr 100px;
+      margin-top: 40px;
+    }
+    .l-header__logo-wrapper {
+      justify-content: flex-start;
+      margin-left: 40px;
+    }
 
-		.l-header__lists {
-			display: grid;
-			grid-template-columns: repeat(5, 1fr);
-			grid-template-rows: 24px;
-			grid-column-gap: 4.444%;
-			grid-row-gap: 0px;
-			margin-top: 28px;
-			padding-right: 4.444%;
-			max-width: 584px;
-			margin-left: auto;
-			font-size: clamp(1.2rem, 1.4vw, 1.6rem); //両方を設定したい場合
-		}
-	}
+    .l-header__lists {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: 24px;
+      grid-column-gap: 4.444%;
+      grid-row-gap: 0px;
+      margin-top: 28px;
+      padding-right: 4.444%;
+      max-width: 584px;
+      margin-left: auto;
+      font-size: clamp(1.2rem, 1.4vw, 1.6rem); //両方を設定したい場合
+    }
+  }
 }

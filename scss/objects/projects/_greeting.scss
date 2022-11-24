@@ -8,25 +8,25 @@
     width: 343px;
     margin: 0 auto;
   }
-	.p-index-greeting__img-wrapper{
-		img{
-			width: 100%;
-			object-fit: cover;
-		}
-	}
+  .p-index-greeting__img-wrapper {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
   .p-index-greeting__heading {
     margin-top: 56px;
     font-size: 2.4rem;
-		line-height: 1.33;
+    line-height: 1.33;
   }
   .p-index-greeting__name {
     margin-top: 32px;
-		line-height: 1.5;
+    line-height: 1.5;
     span:nth-of-type(1) {
       display: block;
       padding-bottom: 8px;
-			font-size: 1.8rem;
-			line-height: 1.33;
+      font-size: 1.8rem;
+      line-height: 1.33;
     }
     span:nth-of-type(2) {
       font-size: 2.4rem;
@@ -37,7 +37,7 @@
     margin-top: 24px;
     line-height: 24px;
     letter-spacing: 0.2em;
-		line-height: 1.5;
+    line-height: 1.5;
   }
 }
 // greetingセクション
@@ -45,46 +45,46 @@
   .p-index-greeting {
     margin-top: 160px;
     padding-bottom: 120px;
-		position: relative;
-		&::after {
-			content: "";
-			position: absolute;
-			background: linear-gradient(
-				90deg,
-				import.$color-river-blue 0%,
-				import.$color-cold-ice 100%
-			);
-			width: 100%;
-			height: 272px;
-			bottom: 0;
-			z-index: -1;
-		}
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      background: linear-gradient(
+        90deg,
+        import.$color-river-blue 0%,
+        import.$color-cold-ice 100%
+      );
+      width: 100%;
+      height: 272px;
+      bottom: 0;
+      z-index: -1;
+    }
     .p-index-greeting__grid-wrapper {
       width: auto;
-			max-width: 1200px;
+      max-width: 1200px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: 1fr;
       grid-column-gap: 0px;
       grid-row-gap: 0px;
-			align-items: flex-start;
-			justify-content: center;
+      align-items: flex-start;
+      justify-content: center;
     }
-		.p-index-greeting__grid-item:nth-of-type(2){
-			padding-left: 32px;
-			padding-bottom: 68px;
-			background-color: import.$color-white;
-			max-height: 100%;
-			width: 49vw;
-			max-width: 600px;
-		}
+    .p-index-greeting__grid-item:nth-of-type(2) {
+      padding-left: 32px;
+      padding-bottom: 68px;
+      background-color: import.$color-white;
+      max-height: 100%;
+      width: 49vw;
+      max-width: 600px;
+    }
     .p-index-greeting__heading {
       margin-top: 32px;
     }
 
     .p-index-greeting__text {
-			width: 100%;
-			max-width: 480px;
+      width: 100%;
+      max-width: 480px;
     }
   }
 }

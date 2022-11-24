@@ -2,7 +2,7 @@
 @use "../../mixin" as m;
 // Base (Mobile First)
 .p-index-introduction {
-	padding-bottom: 104px;
+  padding-bottom: 104px;
   .p-index-introduction__grid-wrapper {
     display: flex;
     flex-direction: column;
@@ -15,8 +15,8 @@
     grid-template-rows: 48px 240px 64px;
     grid-column-gap: 0px;
     grid-row-gap: 40px;
-		padding-bottom: 64px;
-		margin: 0 auto;
+    padding-bottom: 64px;
+    margin: 0 auto;
   }
   .p-index-introduction__text {
     line-height: 1.5;
@@ -29,32 +29,32 @@
     grid-column-gap: 0px;
     grid-row-gap: 16px;
   }
-	.p-index-introduction__img-wrapper{
-		max-width: 452px;
-		img{
-			width: 100%;
-		}
-	}
+  .p-index-introduction__img-wrapper {
+    max-width: 452px;
+    img {
+      width: 100%;
+    }
+  }
 }
 // introductionセクション
 @include m.mq(pc) {
-	.p-index-introduction {
-		padding-bottom: 240px;
-		.p-index-introduction__grid-wrapper {
-			display: grid;
-			grid-template-columns: 320px 1fr;
-			grid-template-rows: 1fr;
-			grid-column-gap: 6.667%;
-			grid-row-gap: 0px;
-			margin-right: calc(50% - 50vw);
-			margin-top: 120px;
-			align-items: flex-start;
-		}
-		.p-index-introduction__grid-item:nth-of-type(2) {
-			grid-template-columns: repeat(2, 50%);
-			grid-template-rows: repeat(2, 1fr);
-			grid-row-gap: 0px;
-			max-width: 904px;
-		}
-	}
+  .p-index-introduction {
+    padding-bottom: 240px;
+    .p-index-introduction__grid-wrapper {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      grid-template-rows: 1fr;
+      grid-column-gap: 6.667%;
+      grid-row-gap: 0px;
+      margin-right: calc(50% - 50vw);
+      margin-top: 120px;
+      align-items: flex-start;
+    }
+    .p-index-introduction__grid-item:nth-of-type(2) {
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: repeat(2, 1fr);
+      grid-row-gap: 0px;
+      max-width: 904px;
+    }
+  }
 }

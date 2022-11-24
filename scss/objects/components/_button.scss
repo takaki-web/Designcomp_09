@@ -2,13 +2,13 @@
 @use "../../mixin" as m;
 
 // Base (Mobile First)
-		.c-button{
-			width: 320px;
-			height: 64px;
-			background: linear-gradient(90deg, #63A6DB 0%, #A7D28F 100%);
-			color: import.$color-white;
-			font-size: 2.4rem;
-			text-align: center;
-		}
+.c-button {
+  width: 320px;
+  height: 64px;
+  background: linear-gradient(90deg, #63a6db 0%, #a7d28f 100%);
+  color: import.$color-white;
+  font-size: 2.4rem;
+  text-align: center;
+}
 @include m.mq(pc) {
 }
