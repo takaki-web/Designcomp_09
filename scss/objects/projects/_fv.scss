@@ -86,8 +86,7 @@
   /* ナビ開いてる時のバツボタン */
   .p-index-fv__burger-btn.active span:nth-child(1) {
     width: 36px;
-    top: 0px;
-    left: 10px;
+    top: 20px;
     background: import.$color-black;
     transform: rotate(-45deg);
   }
@@ -95,15 +94,14 @@
   .p-index-fv__burger-btn.active span:nth-child(2),
   .p-index-fv__burger-btn.active span:nth-child(3) {
     width: 36px;
-    top: 0px;
-    left: 10px;
+    top: 20px;
     background: import.$color-black;
     transform: rotate(45deg);
   }
   .p-index-fv__burger-btn.active {
     background: none;
-    top: 0;
-    transform: translate(-10px, -50px);
+    top: 5vh;
+    position: fixed;
   }
   /* ナビメニュー内 */
   .p-index-fv__burger-menu {
@@ -135,7 +133,7 @@
     grid-row-gap: 64px;
   }
 
-  .p-index-fv__burger-menu__link {
+  .p-index-fv__burger-menu-link {
     transition: 0.4s all;
     font-size: 2.4rem;
     line-height: 1.5;
@@ -146,7 +144,7 @@
   }
 
   /* ハンバーガーメニュー押してactiveクラスを付いたら表示する */
-  nav.p-index-fv__burger-menu.active {
+  .p-index-fv__burger-menu.active {
     opacity: 1;
     visibility: visible;
   }

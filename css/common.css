@@ -266,23 +266,21 @@ table {
 }
 .p-index-fv .p-index-fv__burger-btn.active span:nth-child(1) {
   width: 36px;
-  top: 0px;
-  left: 10px;
+  top: 20px;
   background: #000;
   transform: rotate(-45deg);
 }
 .p-index-fv .p-index-fv__burger-btn.active span:nth-child(2),
 .p-index-fv .p-index-fv__burger-btn.active span:nth-child(3) {
   width: 36px;
-  top: 0px;
-  left: 10px;
+  top: 20px;
   background: #000;
   transform: rotate(45deg);
 }
 .p-index-fv .p-index-fv__burger-btn.active {
   background: none;
-  top: 0;
-  transform: translate(-10px, -50px);
+  top: 5vh;
+  position: fixed;
 }
 .p-index-fv .p-index-fv__burger-menu {
   position: fixed;
@@ -311,16 +309,16 @@ table {
   grid-column-gap: 0px;
   grid-row-gap: 64px;
 }
-.p-index-fv .p-index-fv__burger-menu__link {
+.p-index-fv .p-index-fv__burger-menu-link {
   transition: 0.4s all;
   font-size: 2.4rem;
   line-height: 1.5;
 }
-.p-index-fv .p-index-fv__burger-menu__link a {
+.p-index-fv .p-index-fv__burger-menu-link a {
   border-bottom: 1px solid #fff;
   padding-bottom: 8px;
 }
-.p-index-fv nav.p-index-fv__burger-menu.active {
+.p-index-fv .p-index-fv__burger-menu.active {
   opacity: 1;
   visibility: visible;
 }
