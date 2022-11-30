@@ -32,9 +32,9 @@
     max-width: 320px;
     aspect-ratio: 40/41;
     background-color: import.$color-white;
-    position: relative;
   }
   .p-index-notice__img-wrapper {
+    position: relative;
     overflow: hidden; /* これが無いと枠ごと大きくなる */
     display: block;
     &:hover {
@@ -46,17 +46,20 @@
       }
     }
     img {
-      width: 100%;
+      max-width: 100%;
+      aspect-ratio: auto 320/184;
+      height: auto;
       transition: transform 0.3s ease; /* ゆっくり変化させる */
     }
   }
   .p-index-notice__mask {
     position: absolute;
     background-color: import.$color-mask;
-    width: 320px;
-    height: 184px;
     top: 0;
     z-index: -1;
+    width: 320px;
+    height: 184px;
+    overflow: hidden;
   }
   .p-index-notice__content-wrapper {
     margin-left: 16px;
