@@ -30,7 +30,9 @@
     max-width: 343px;
     grid-area: 2 / 1 / 3 / 2;
     img {
-      width: 100%;
+      max-width: 100%;
+      aspect-ratio: auto 343/255;
+      height: auto;
     }
     margin: 0 auto;
   }
@@ -123,7 +125,7 @@
     overscroll-behavior-y: none;
   }
 
-  .p-index-fv__burger-menu ul {
+  .p-index-fv__burger-lists{
     text-align: center;
     margin-top: 188px;
     display: grid;
@@ -159,6 +161,9 @@
       max-width: 700px;
       grid-area: 1 / 1 / 2 / 2;
       margin: 0;
+      img {
+        aspect-ratio: auto 700/520;
+      }
     }
     .p-index-fv__grid-wrapper {
       display: grid;

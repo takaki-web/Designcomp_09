@@ -32,7 +32,9 @@
   .p-index-introduction__img-wrapper {
     max-width: 452px;
     img {
-      width: 100%;
+      max-width: 100%;
+      aspect-ratio: auto 343/257;
+      height: auto;
     }
   }
 }
@@ -56,5 +58,11 @@
       grid-row-gap: 0px;
       max-width: 904px;
     }
+    .p-index-introduction__img-wrapper {
+      img {
+        aspect-ratio: auto 452/339;
+      }
+    }
+
   }
 }

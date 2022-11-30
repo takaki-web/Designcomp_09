@@ -129,16 +129,26 @@
     <section class="p-index-fv">
       <div class="c-inner">
         <div class="p-index-fv__grid-wrapper">
-          <picture class="p-index-fv__img-wrapper">
+          <picture class='p-index-fv__img-wrapper'>
             <source
-              media="(min-width:850px)"
-              srcset="img/pc/fv-pc.webp 1x, img/pc/fv-pc@2x.webp 2x"
+            type='image/webp'
+            media='(min-width:850px)'
+            srcset='img/pc/fv-pc.webp 1x,img/pc/fv-pc@2x.webp 2x'
+            width='700' height='520'
             />
-            <img loading='lazy' src=img/sp/fv-sp.webp srcset=' img/sp/fv-sp.webp
-            1x, img/sp/fv-sp@2x.webp 2x ' alt='fv' />
-          </picture>
-          <!-- /p-index-fv__img-wrapper -->
-          <h1 class="p-index-fv__grid-item">
+            <source
+            type='image/webp'
+            srcset='img/sp/fv-sp.webp 1x,img/sp/fv-sp@2x.webp 2x'
+            width='343' height='255'
+            />
+            <img
+            src=img/sp/fv-sp.webp
+            alt='fv'
+            width='343' height='255'
+            />
+            </picture>
+            <!-- /p-index-fv__img-wrapper -->
+            <h1 class="p-index-fv__grid-item">
             <p class="p-index-fv__text">River</p>
             <!-- /.p-index-fv__text -->
             <p class="p-index-fv__text">Dental</p>
@@ -156,7 +166,7 @@
             <span></span>
           </div>
           <nav class="p-index-fv__burger-menu js-p-index-fv__burger-menu">
-            <ul id="menu">
+            <ul class="p-index-fv__burger-lists">
               <li class="p-index-fv__burger-menu-link">
                 <a href="#notice">お知らせ</a>
               </li>
@@ -253,12 +263,19 @@
         <!-- /.c-title -->
         <div class="p-index-notice__grid-wrapper">
           <div class="p-index-notice__grid-item">
-            <picture class="p-index-notice__img-wrapper">
-              <img loading='lazy' src=img/component/notice01.webp srcset='
-              img/component/notice01.webp 1x, img/component/notice01@2x.webp 2x
-              ' alt='notice01' />
-              <div class="p-index-notice__mask"></div>
-              <!-- /.p-index-notice__mask -->
+            <picture class='p-index-notice__img-wrapper'>
+            <source
+            type='image/webp'
+            srcset='img/component/notice01.webp 1x,img/component/notice01@2x.webp 2x'
+            width='320' height='184'
+            />
+            <img
+            src=img/component/notice01.webp
+            alt='notice01'
+            width='320' height='184'
+            />
+            <div class="p-index-notice__mask"></div>
+            <!-- /.p-index-notice__mask -->
             </picture>
             <!-- /p-index-notice__img-wrapper -->
             <div class="p-index-notice__content-wrapper">
@@ -273,14 +290,21 @@
           </div>
           <!-- /.p-index-notice__grid-item -->
           <div class="p-index-notice__grid-item">
-            <picture class="p-index-notice__img-wrapper">
-              <img loading='lazy' src=img/component/notice02.webp srcset='
-              img/component/notice02.webp 1x, img/component/notice02@2x.webp 2x
-              ' alt='notice02' />
+            <picture class='p-index-notice__img-wrapper'>
+              <source
+              type='image/webp'
+              srcset='img/component/notice02.webp 1x,img/component/notice02@2x.webp 2x'
+              width='320' height='184'
+              />
+              <img
+              src=img/component/notice02.webp
+              alt='notice02'
+              width='320' height='184'
+              />
               <div class="p-index-notice__mask"></div>
               <!-- /.p-index-notice__mask -->
-            </picture>
-            <!-- /p-index-notice__img-wrapper -->
+              </picture>
+              <!-- /p-index-notice__img-wrapper -->
             <div class="p-index-notice__content-wrapper">
               <p class="p-index-notice__content-date">2022.06.01</p>
               <!-- /.p-index-notice__date -->
@@ -293,14 +317,21 @@
           </div>
           <!-- /.p-index-notice__grid-item -->
           <div class="p-index-notice__grid-item">
-            <picture class="p-index-notice__img-wrapper">
-              <img loading='lazy' src=img/component/notice03.webp srcset='
-              img/component/notice03.webp 1x, img/component/notice03@2x.webp 2x
-              ' alt='notice03' />
+            <picture class='p-index-notice__img-wrapper'>
+              <source
+              type='image/webp'
+              srcset='img/component/notice03.webp 1x,img/component/notice03@2x.webp 2x'
+              width='320' height='184'
+              />
+              <img
+              src=img/component/notice03.webp
+              alt='notice03'
+              width='320' height='184'
+              />
               <div class="p-index-notice__mask"></div>
               <!-- /.p-index-notice__mask -->
-            </picture>
-            <!-- /p-index-notice__img-wrapper -->
+              </picture>
+              <!-- /p-index-notice__img-wrapper -->
             <div class="p-index-notice__content-wrapper">
               <p class="p-index-notice__content-date">2022.06.01</p>
               <!-- /.p-index-notice__date -->
@@ -553,14 +584,23 @@
       <div class="div-c-inner">
         <div class="p-index-greeting__grid-wrapper">
           <div class="p-index-greeting__grid-item">
-            <picture class="p-index-greeting__img-wrapper">
-              <source
-                media="(min-width:850px)"
-                srcset="img/pc/profile-pc.webp 1x, img/pc/profile-pc@2x.webp 2x"
-              />
-              <img loading='lazy' src=img/sp/profile-sp.webp srcset='
-              img/sp/profile-sp.webp 1x, img/sp/profile-sp@2x.webp 2x '
-              alt='profile' />
+            <picture class='p-index-greeting__img-wrapper'>
+            <source
+            type='image/webp'
+            media='(min-width:850px)'
+            srcset='img/pc/profile-pc.webp 1x,img/pc/profile-pc@2x.webp 2x'
+            width='600' height='400'
+            />
+            <source
+            type='image/webp'
+            srcset='img/sp/profile-sp.webp 1x,img/sp/profile-sp@2x.webp 2x'
+            width='343' height='224'
+            />
+            <img
+            src=img/sp/profile-sp.webp
+            alt='profile'
+            width='343' height='224'
+            />
             </picture>
             <!-- /p-index-greeting__img-wrapper -->
           </div>
@@ -600,59 +640,83 @@
           </div>
           <!-- /.p-index-introduction__grid-item -->
           <div class="p-index-introduction__grid-item">
-            <picture class="p-index-introduction__img-wrapper">
+            <picture class='p-index-introduction__img-wrapper'>
               <source
-                media="(min-width:850px)"
-                srcset="
-                  img/pc/hospital01-pc.webp    1x,
-                  img/pc/hospital01-pc@2x.webp 2x
-                "
+              type='image/webp'
+              media='(min-width:850px)'
+              srcset='img/pc/hospital01-pc.webp 1x,img/pc/hospital01-pc@2x.webp 2x'
+              width='452' height='339'
               />
-              <img loading='lazy' src=img/sp/hospital01-sp.webp srcset='
-              img/sp/hospital01-sp.webp 1x, img/sp/hospital01-sp@2x.webp 2x '
-              alt='hospital01' />
-            </picture>
-            <!-- /p-index-introduction__img-wrapper -->
-            <picture class="p-index-introduction__img-wrapper">
               <source
-                media="(min-width:850px)"
-                srcset="
-                  img/pc/hospital02-pc.webp    1x,
-                  img/pc/hospital02-pc@2x.webp 2x
-                "
+              type='image/webp'
+              srcset='img/sp/hospital01-sp.webp 1x,img/sp/hospital01-sp@2x.webp 2x'
+              width='343' height='257'
               />
-              <img loading='lazy' src=img/sp/hospital02-sp.webp srcset='
-              img/sp/hospital02-sp.webp 1x, img/sp/hospital02-sp@2x.webp 2x '
-              alt='hospital02' />
-            </picture>
-            <!-- /p-index-introduction__img-wrapper -->
-            <picture class="p-index-introduction__img-wrapper">
-              <source
-                media="(min-width:850px)"
-                srcset="
-                  img/pc/hospital03-pc.webp    1x,
-                  img/pc/hospital03-pc@2x.webp 2x
-                "
+              <img
+              src=img/sp/hospital01-sp.webp
+              alt='hospital01'
+              width='343' height='257'
               />
-              <img loading='lazy' src=img/sp/hospital03-sp.webp srcset='
-              img/sp/hospital03-sp.webp 1x, img/sp/hospital03-sp@2x.webp 2x '
-              alt='hospital03' />
-            </picture>
-            <!-- /p-index-introduction__img-wrapper -->
-            <picture class="p-index-introduction__img-wrapper">
-              <source
-                media="(min-width:850px)"
-                srcset="
-                  img/pc/hospital04-pc.webp    1x,
-                  img/pc/hospital04-pc@2x.webp 2x
-                "
-              />
-              <img loading='lazy' src=img/sp/hospital04-sp.webp srcset='
-              img/sp/hospital04-sp.webp 1x, img/sp/hospital04-sp@2x.webp 2x '
-              alt='hospital04' />
-            </picture>
-            <!-- /p-index-introduction__img-wrapper -->
-          </div>
+              </picture>
+              <!-- /p-index-introduction__img-wrapper -->
+              <picture class='p-index-introduction__img-wrapper'>
+                <source
+                type='image/webp'
+                media='(min-width:850px)'
+                srcset='img/pc/hospital02-pc.webp 1x,img/pc/hospital02-pc@2x.webp 2x'
+                width='452' height='339'
+                />
+                <source
+                type='image/webp'
+                srcset='img/sp/hospital02-sp.webp 1x,img/sp/hospital02-sp@2x.webp 2x'
+                width='343' height='257'
+                />
+                <img
+                src=img/sp/hospital02-sp.webp
+                alt='hospital02'
+                width='343' height='257'
+                />
+                </picture>
+                <!-- /p-index-introduction__img-wrapper -->
+                <picture class='p-index-introduction__img-wrapper'>
+                  <source
+                  type='image/webp'
+                  media='(min-width:850px)'
+                  srcset='img/pc/hospital03-pc.webp 1x,img/pc/hospital03-pc@2x.webp 2x'
+                  width='452' height='339'
+                  />
+                  <source
+                  type='image/webp'
+                  srcset='img/sp/hospital03-sp.webp 1x,img/sp/hospital03-sp@2x.webp 2x'
+                  width='343' height='257'
+                  />
+                  <img
+                  src=img/sp/hospital03-sp.webp
+                  alt='hospital03'
+                  width='343' height='257'
+                  />
+                  </picture>
+                  <!-- /p-index-introduction__img-wrapper -->
+                  <picture class='p-index-introduction__img-wrapper'>
+                    <source
+                    type='image/webp'
+                    media='(min-width:850px)'
+                    srcset='img/pc/hospital04-pc.webp 1x,img/pc/hospital04-pc@2x.webp 2x'
+                    width='452' height='339'
+                    />
+                    <source
+                    type='image/webp'
+                    srcset='img/sp/hospital04-sp.webp 1x,img/sp/hospital04-sp@2x.webp 2x'
+                    width='343' height='257'
+                    />
+                    <img
+                    src=img/sp/hospital04-sp.webp
+                    alt='hospital04'
+                    width='343' height='257'
+                    />
+                    </picture>
+                    <!-- /p-index-introduction__img-wrapper -->
+                </div>
           <!-- /.p-index-introduction__grid-item -->
         </div>
         <!-- /.p-index-introduction__grid-wrapper -->
@@ -850,7 +914,6 @@
       </div>
       <!-- /.c-inner -->
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="/js/script.js"></script>
   </body>
 </html>

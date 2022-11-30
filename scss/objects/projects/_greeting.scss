@@ -10,8 +10,9 @@
   }
   .p-index-greeting__img-wrapper {
     img {
-      width: 100%;
-      object-fit: cover;
+      max-width: 100%;
+      aspect-ratio: auto 343/224;
+      height: auto;
     }
   }
   .p-index-greeting__heading {
@@ -69,6 +70,11 @@
       grid-row-gap: 0px;
       align-items: flex-start;
       justify-content: center;
+    }
+    .p-index-greeting__img-wrapper{
+      img {
+        aspect-ratio: auto 600/400;
+      }
     }
     .p-index-greeting__grid-item:nth-of-type(2) {
       padding-left: 32px;
